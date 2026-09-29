@@ -2046,3 +2046,134 @@ footer > p:nth-child(2) {
     }
 
 }
+
+/* =========================================================
+   ÁREAS DE CONOCIMIENTO (Estilos originales + Tamaños corregidos)
+   ========================================================= */
+
+.tech-section {
+    width: 100%;
+    max-width: 900px; /* Centra y limita el ancho en PC para que no quede exagerado */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.tech-group {
+    width: 100%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.tech-grid {
+    display: grid;
+    /* Ajustamos el tamaño mínimo para PC manteniendo la estructura original */
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); 
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Dejamos tu clase .tech-item exactamente con los colores y valores originales que te gustaban */
+.tech-item {
+    /* (Mantené acá los estilos de fondo, bordes y colores originales que ya tenías definidos) */
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+/* =========================================================
+   AJUSTES PARA CELULARES (Pantallas menores a 700px)
+   ========================================================= */
+
+@media (max-width: 700px) {
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 8px;
+    }
+}
+
+
+/* =========================================================
+   CONTENEDOR GENERAL DE LA TABLA
+   ========================================================= */
+
+.project-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+.project-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project-table-wrapper th,
+.project-table-wrapper td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLAS EN CELULARES (Tarjetas limpias y sin cabecera fea)
+   ========================================================= */
+
+@media (max-width: 700px) {
+    .project-table-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 20px 0;
+    }
+
+    .project-table-wrapper table {
+        width: 100% !important;
+    }
+
+    /* Ocultamos por completo la primera fila (Concepto / Función) o el thead */
+    .project-table-wrapper thead,
+    .project-table-wrapper tr:first-child {
+        display: none !important;
+    }
+
+    /* Cada fila de datos se convierte en una tarjeta independiente a full ancho */
+    .project-table-wrapper tr {
+        display: block;
+        width: 100% !important;
+        margin-bottom: 14px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+
+    /* Las celdas se apilan verticalmente dentro de cada tarjeta */
+    .project-table-wrapper td {
+        display: block;
+        width: 100% !important;
+        border: none;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* La primera celda (ej: Evidencia, Inferencia) actúa como título destacado */
+    .project-table-wrapper td:nth-child(1) {
+        font-size: 13px;
+        font-weight: 700;
+        color: #ff2a85;
+        margin-bottom: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* La segunda celda es la definición/descripción */
+    .project-table-wrapper td:nth-child(2) {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #e0e0e0;
+    }
+}
