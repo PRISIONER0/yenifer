@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Innova Tree | Árboles hoy, futuro mañana</title>
+<meta name="description" content="Plataforma de restauración, biodiversidad y trazabilidad de árboles nativos de Argentina.">
+<style>
+:root{--green:#0d5a38;--green2:#159455;--lime:#94d96b;--ink:#10281e;--cream:#f6f5ed;--white:#fff;--muted:#607066}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff}h1,h2,h3{font-family:Georgia,serif;margin:0 0 14px}a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 24px}.btn{display:inline-block;padding:14px 22px;border-radius:30px;background:var(--green2);color:#fff;font-weight:800}.btn.outline{background:transparent;border:1px solid #fff}.eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:800}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-family:Georgia,serif;font-weight:bold}.brand b{font-size:20px}.leaf{font-size:30px}.links{display:flex;gap:20px;font-size:13px;font-weight:700}.hero{min-height:620px;color:#fff;background:linear-gradient(90deg,rgba(4,43,25,.9),rgba(4,43,25,.18)),url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center}.hero-content{max-width:650px}.hero h1{font-size:64px;line-height:.98}.hero h1 span{color:#a7ed78}.hero p{font-size:19px;line-height:1.6;max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.stats{background:var(--cream);padding:28px 0}.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.stat{border-right:1px solid #ccd3ca}.stat:last-child{border:0}.stat strong{font:700 30px Georgia,serif;display:block}.section{padding:80px 0}.section h2{font-size:42px}.lead{font-size:18px;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:45px}.step .ico{font-size:38px}.step b{display:block;margin:14px 0 8px}.step p{font-size:14px;line-height:1.5;color:var(--muted)}.explore{background:#eef2e8}.explore-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:45px;align-items:center}.map{min-height:480px;border-radius:30px;background:linear-gradient(rgba(9,83,49,.12),rgba(9,83,49,.12)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Argentina_location_map.svg/500px-Argentina_location_map.svg.png') center/contain no-repeat;position:relative}.species{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}.card{background:#fff;border-radius:18px;padding:16px;box-shadow:0 10px 35px rgba(0,0,0,.07)}.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}.mini{display:flex;gap:10px;align-items:center;margin:10px 0}.mini img{width:65px;height:55px}.carbon{color:#fff;background:linear-gradient(90deg,rgba(0,49,29,.93),rgba(0,49,29,.65)),url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85') center/cover}.carbon-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.carbon-badge{width:180px;height:180px;border:5px solid #5be174;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font:700 34px Georgia,serif;margin:auto}.carbon small{display:block;font:14px Arial}.people{background:url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1800&q=85') center/cover}.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.glass{padding:28px;border-radius:18px;background:rgba(3,45,29,.84);color:#fff;backdrop-filter:blur(8px);min-height:220px}.glass h3{font-size:27px}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}.news img{width:100%;height:210px;object-fit:cover;border-radius:14px}.news h3{font-size:22px;margin-top:14px}.news .eyebrow{color:var(--green2)}.cta{background:#06452c;color:#fff;padding:65px 0}.cta-grid{display:flex;justify-content:space-between;align-items:center;gap:30px}.footer{padding:35px 0;background:#f6f6f0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}
+@media(max-width:850px){.links{display:none}.hero{min-height:560px}.hero h1{font-size:46px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat{border:0}.steps{grid-template-columns:1fr 1fr}.explore-grid,.carbon-grid{grid-template-columns:1fr}.species{grid-template-columns:1fr}.people-grid,.news-grid{grid-template-columns:1fr}.cta-grid,.footer-row{align-items:flex-start;flex-direction:column}.section{padding:60px 0}}
+@media(max-width:520px){.hero h1{font-size:40px}.steps{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.section h2{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav class="nav">
+    <a class="brand" href="#"><span class="leaf">🌿</span><span><b>INNOVA TREE</b><br><small>ÁRBOLES HOY, FUTURO MAÑANA</small></span></a>
+    <div class="links"><a href="#proyecto">Proyecto</a><a href="#mapa">Mapa de árboles</a><a href="#como">Cómo funciona</a><a href="#impacto">Impacto</a><a href="#noticias">Noticias</a></div>
+    <a class="btn" href="#participa">Plantar un árbol</a>
+  </nav>
+</header>
+
+<section class="hero">
+ <div class="wrap" style="width:100%">
+  <div class="hero-content">
+   <div class="eyebrow">Naturaleza · Comunidades · Futuro</div>
+   <h1>Un árbol puede cambiar <span>mucho más</span> que un paisaje</h1>
+   <p>Reforestamos territorios, protegemos la biodiversidad y generamos oportunidades para las comunidades. Cada aporte puede convertirse en un árbol con historia, registro y ubicación.</p>
+   <div class="actions"><a class="btn" href="#participa">Quiero plantar un árbol 🌱</a><a class="btn outline" href="#proyecto">Conocer el proyecto</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="stats"><div class="wrap stats-grid">
+ <div class="stat"><strong>12.840</strong>Árboles plantados*</div><div class="stat"><strong>42</strong>Proyectos*</div><div class="stat"><strong>5.230</strong>Personas*</div><div class="stat"><strong>1.120 t</strong>CO₂ potencial*</div><div class="stat"><strong>18</strong>Provincias*</div>
+</div></section>
+
+<section class="section" id="proyecto"><div class="wrap">
+ <h2 id="como">Cómo funciona</h2><p class="lead">Un proceso simple. Un impacto que podés seguir.</p>
+ <div class="steps">
+  <div class="step"><div class="ico">🤲</div><b>1. Elegís contribuir</b><p>Aportás para hacer posible la plantación y restauración.</p></div>
+  <div class="step"><div class="ico">🌱</div><b>2. Viveros locales</b><p>Articulamos con viveros para seleccionar especies nativas adecuadas.</p></div>
+  <div class="step"><div class="ico">🪴</div><b>3. Plantamos</b><p>Voluntarios, comunidades e instituciones realizan la jornada.</p></div>
+  <div class="step"><div class="ico">📍</div><b>4. Registramos</b><p>Documentamos la especie, proyecto, fecha y geolocalización.</p></div>
+  <div class="step"><div class="ico">📜</div><b>5. Tu certificado</b><p>Recibís el registro digital y acceso a la ubicación de tu árbol.</p></div>
+ </div>
+</div></section>
+
+<section class="section explore" id="mapa"><div class="wrap explore-grid">
+ <div>
+  <div class="eyebrow">Biodiversidad argentina</div><h2>Descubrí los árboles nativos de Argentina</h2>
+  <p class="lead">Explorá las especies de cada región y, en la versión completa de la plataforma, alterná entre especies nativas y árboles plantados por Innova Tree.</p>
+  <div class="map" aria-label="Mapa ilustrativo de Argentina"></div>
+  <small>Mapa ilustrativo. La distribución botánica deberá validarse con fuentes técnicas antes de publicación.</small>
+ </div>
+ <div>
+  <h3>Especies destacadas</h3>
+  <div class="species">
+   <article class="card"><img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=900&q=80" alt="Bosque"><div class="eyebrow" style="margin-top:14px;color:#159455">NOA · Yungas</div><h3>Lapacho rosado</h3><p><i>Handroanthus impetiginosus</i></p><a class="btn" href="#">Conocer más</a></article>
+   <div class="card"><div class="mini">🌳 <b>Quebracho colorado</b></div><div class="mini">🌲 <b>Pehuén</b></div><div class="mini">🌿 <b>Arrayán</b></div><div class="mini">🌳 <b>Timbó</b></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="section carbon" id="impacto"><div class="wrap carbon-grid">
+ <div><div class="eyebrow">Impacto ambiental</div><h2>Tu acción deja una huella positiva</h2><p>Cada árbol puede contribuir a capturar CO₂, restaurar suelos, favorecer la biodiversidad y recuperar ecosistemas. Innova Tree busca registrar el impacto para hacerlo visible y trazable.</p><p><small>*La captura de carbono varía según especie, edad, ambiente, manejo y permanencia. Las estimaciones de CO₂ requieren una metodología técnica verificable y no equivalen automáticamente a créditos de carbono.</small></p></div>
+ <div class="carbon-badge">CO₂<small>medir · restaurar<br>seguir</small></div>
+</div></section>
+
+<section class="section people" id="participa"><div class="wrap people-grid">
+ <div class="glass"><div class="eyebrow">Personas</div><h3>Plantá un árbol y seguí su historia</h3><p>Recibí un certificado digital y accedé al registro de la plantación.</p><a href="#">Quiero donar →</a></div>
+ <div class="glass"><div class="eyebrow">Empresas</div><h3>Sumá impacto a tu estrategia</h3><p>Programas de restauración, voluntariado y reportes de contribución ambiental.</p><a href="#">Programas corporativos →</a></div>
+ <div class="glass"><div class="eyebrow">Voluntariado</div><h3>Participá en territorio</h3><p>Sumate a jornadas junto a comunidades, viveros e instituciones.</p><a href="#">Quiero participar →</a></div>
+</div></section>
+
+<section class="section" id="noticias"><div class="wrap">
+ <div class="eyebrow">Actualidad</div><h2>Noticias</h2><p class="lead">Historias que inspiran un futuro más verde.</p>
+ <div class="news-grid">
+  <article class="news"><img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=900&q=80" alt="Ave"><div class="eyebrow">Biodiversidad</div><h3>La recuperación de especies también cuenta la historia del bosque</h3><p>Contenido de ejemplo para la futura sección editorial.</p></article>
+  <article class="news"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Naturaleza"><div class="eyebrow">Comunidades</div><h3>Restaurar territorios es también construir comunidad</h3><p>Proyectos, voluntariado y conocimiento local trabajando juntos.</p></article>
+  <article class="news"><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=900&q=80" alt="Árboles"><div class="eyebrow">Ciencia</div><h3>Bosques nativos frente al cambio climático</h3><p>Un espacio para divulgación, universidades e investigación.</p></article>
+ </div>
+</div></section>
+
+<section class="cta"><div class="wrap cta-grid"><div><div class="brand"><span class="leaf">🌿</span><b>INNOVA TREE</b></div><h2>Juntos podemos restaurar los ecosistemas de Argentina</h2><p>Personas, empresas, viveros, universidades y comunidades conectadas por un propósito común.</p></div><div><a class="btn" href="#">Plantar un árbol</a></div></div></section>
+
+<footer class="footer"><div class="wrap footer-row"><div><b>INNOVA GREEN</b><br>Laboratorio de Innovación Sustentable</div><div>Innova Tree · Alianzas · Recursos · Contacto</div><div>Tecnología · Naturaleza · Comunidad · Impacto</div></div><div class="wrap"><p><small>*Las cifras mostradas en este prototipo son ilustrativas y deben reemplazarse por datos reales/verificados antes de publicar.</small></p></div></footer>
+</body>
+</html>
