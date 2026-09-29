@@ -40,16 +40,16 @@
 
 <body>
 
+    <a
+    href="../index.html#proyectos"
+    class="floating-project-back"
+>
+    ← Volver a proyectos
+</a>
+
     <main>
 
         <section class="project-detail">
-
-            <a
-                href="../index.html#proyectos"
-                class="project-back"
-            >
-                ← Volver a proyectos
-            </a>
 
 
             <!-- *IMAGEN PRINCIPAL* -->
@@ -280,7 +280,72 @@
                         encuentre rápidamente información sobre el proyecto,
                         su funcionamiento y las diferentes formas de participar.
                     </p>
+<div class="project-comparison">
 
+    <div class="comparison-item">
+
+        <span>
+            SCREENSHOTS
+        </span>
+
+        <button
+            type="button"
+            class="comparison-image-button"
+            onclick="openProjectImage('../assets/images/screenshot.png')"
+        >
+            <img
+                src="../assets/images/screenshot.png"
+                alt="Diseño anterior de PRISIONER0"
+            >
+        </button>
+
+    </div>
+
+
+    <div class="comparison-item">
+
+        <span>
+            SCREENSHOTS
+        </span>
+
+        <button
+            type="button"
+            class="comparison-image-button"
+            onclick="openProjectImage('../assets/images/screenshot2.jpg')"
+        >
+            <img
+                src="../assets/images/screenshot2.jpg"
+                alt="Diseño actualizado de PRISIONER0"
+            >
+        </button>
+
+    </div>
+
+</div>
+
+
+<div
+    id="projectImageModal"
+    class="project-image-modal"
+    onclick="closeProjectImage()"
+>
+
+    <button
+        type="button"
+        class="project-image-modal-close"
+        onclick="closeProjectImage()"
+    >
+        ×
+    </button>
+
+    <img
+        id="projectImageModalContent"
+        src=""
+        alt=""
+        onclick="event.stopPropagation()"
+    >
+
+</div>
 
                     <!-- *TECNOLOGÍAS* -->
 
@@ -428,7 +493,46 @@
     >
         ↑
     </button>
+<script>
 
+    function openProjectImage(image) {
+
+        const modal =
+            document.getElementById("projectImageModal");
+
+        const modalImage =
+            document.getElementById("projectImageModalContent");
+
+        modalImage.src = image;
+
+        modal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+    }
+
+
+    function closeProjectImage() {
+
+        const modal =
+            document.getElementById("projectImageModal");
+
+        modal.classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
+
+
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "Escape") {
+
+            closeProjectImage();
+
+        }
+
+    });
+
+</script>
 
     <script>
 

@@ -1419,32 +1419,45 @@ footer > p:nth-child(2) {
 @media (max-width: 700px) {
 
     .navbar {
-        height: 68px;
-
-        padding: 0 20px;
+        height: auto;
+        min-height: 68px;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
+    /* MENÚ VISIBLE EN CELULAR */
     .nav-links {
-        display: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        order: 3;
+        padding-bottom: 5px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        white-space: nowrap;
     }
 
     .nav-cv {
         padding: 8px 15px;
+        font-size: 13px;
     }
 
     .hero {
         min-height: auto;
-
         padding:
             130px 22px
             70px;
-
         gap: 20px;
     }
 
     .hero h1 {
         font-size: 40px;
-
         letter-spacing: -2px;
     }
 
@@ -1454,7 +1467,6 @@ footer > p:nth-child(2) {
 
     .hero-buttons {
         flex-direction: column;
-
         align-items: stretch;
     }
 
@@ -1524,9 +1536,7 @@ footer > p:nth-child(2) {
 
     .timeline-item {
         grid-template-columns: 1fr;
-
         gap: 10px;
-
         padding-left: 25px;
     }
 
@@ -1545,9 +1555,7 @@ footer > p:nth-child(2) {
 
     footer {
         grid-template-columns: 1fr;
-
         gap: 15px;
-
         padding:
             30px 22px;
     }
@@ -1556,8 +1564,8 @@ footer > p:nth-child(2) {
     .copyright {
         text-align: left;
     }
-
 }
+
 /* =========================================================
    ANIMACIÓN DE ENTRADA
    ========================================================= */
@@ -1954,4 +1962,87 @@ footer > p:nth-child(2) {
 .tech-item span {
     color: var(--text-muted);
     font-size: 0.78rem;
+}
+
+/* =========================================================
+   BOTÓN FLOTANTE — VOLVER A PROYECTOS
+   ========================================================= */
+
+.floating-project-back {
+    position: fixed;
+
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 26px;
+
+    background: rgba(12, 8, 20, 0.94);
+    color: #ffffff;
+
+    border: 1px solid #b026ff;
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 0 8px rgba(176, 38, 255, 0.45),
+        0 0 20px rgba(176, 38, 255, 0.18);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.floating-project-back:hover {
+    background: rgba(176, 38, 255, 0.15);
+    color: #ffffff;
+
+    border-color: #d66bff;
+
+    transform:
+        translateX(-50%)
+        translateY(-2px);
+
+    box-shadow:
+        0 0 10px rgba(176, 38, 255, 0.7),
+        0 0 30px rgba(176, 38, 255, 0.35);
+}
+
+
+/* =========================================================
+   BOTÓN EN CELULAR
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .floating-project-back {
+        top: 78px;
+
+        padding: 10px 20px;
+
+        font-size: 12px;
+        letter-spacing: 0.7px;
+
+        max-width: calc(100% - 40px);
+    }
+
 }
